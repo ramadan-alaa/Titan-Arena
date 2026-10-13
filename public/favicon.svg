@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCEBA4" />
+      <stop offset="45%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#997519" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181D29" />
+      <stop offset="100%" stop-color="#07090E" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#D4AF37" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Background Squircle -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#bgGrad)" stroke="#D4AF37" stroke-width="1.5" stroke-opacity="0.4" />
+
+  <!-- Trophy Icon in Golden Gradient -->
+  <g filter="url(#glow)">
+    <!-- Trophy Cup Base -->
+    <path d="M26 47 h12 v4 h-12 z" fill="url(#goldGrad)" />
+    <!-- Trophy Stem -->
+    <path d="M30 38 h4 v9 h-4 z" fill="url(#goldGrad)" />
+    <!-- Trophy Foot Curve -->
+    <path d="M24 51 h16 v2.5 h-16 z" rx="1" fill="url(#goldGrad)" />
+    <!-- Trophy Cup Body -->
+    <path d="M20 15 h24 v11 c0 6.627 -5.373 12 -12 12 s-12 -5.373 -12 -12 z" fill="url(#goldGrad)" />
+    <!-- Left Handle -->
+    <path d="M20 18 h-4 c-2.2 0 -4 1.8 -4 4 v3 c0 4.4 3.6 8 8 8 h0 v-3 c-2.8 0 -5 -2.2 -5 -5 v-3 c0 -0.6 0.4 -1 1 -1 h4 z" fill="url(#goldGrad)" opacity="0.9" />
+    <!-- Right Handle -->
+    <path d="M44 18 h4 c2.2 0 4 1.8 4 4 v3 c0 4.4 -3.6 8 -8 8 h0 v-3 c2.8 0 5 -2.2 5 -5 v-3 c0 -0.6 -0.4 -1 -1 -1 h-4 z" fill="url(#goldGrad)" opacity="0.9" />
+    <!-- Star on Cup -->
+    <path d="M32 21.5 l1.5 3.2 3.5 0.5 -2.5 2.5 0.6 3.5 -3.1 -1.7 -3.1 1.7 0.6 -3.5 -2.5 -2.5 3.5 -0.5 z" fill="#181D29" opacity="0.8" />
+  </g>
+</svg>

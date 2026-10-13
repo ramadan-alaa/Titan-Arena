@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 2%;
+    --foreground: 40 20% 94%;
+    --card: 220 15% 6%;
+    --card-foreground: 40 20% 94%;
+    --popover: 220 15% 6%;
+    --popover-foreground: 40 20% 94%;
+    --primary: 43 65% 52%;
+    --primary-foreground: 220 20% 2%;
+    --secondary: 170 55% 37%;
+    --secondary-foreground: 40 20% 94%;
+    --muted: 220 10% 15%;
+    --muted-foreground: 37 8% 51%;
+    --accent: 170 55% 37%;
+    --accent-foreground: 40 20% 94%;
+    --destructive: 350 80% 55%;
+    --destructive-foreground: 40 20% 94%;
+    --border: 43 65% 52% / 0.15;
+    --input: 43 65% 52% / 0.15;
+    --ring: 43 65% 52%;
+    --radius: 0.625rem;
+    --font-display: 'Cairo', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-body: 'Cairo', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: #07090E;
+    color: #F3F4F6;
+    overflow-x: hidden;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.02);
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(212, 175, 55, 0.25);
+    border-radius: 9999px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(212, 175, 55, 0.45);
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .font-body {
+    font-family: var(--font-body);
+  }
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+}
