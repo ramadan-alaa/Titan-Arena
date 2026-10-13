@@ -163,7 +163,7 @@ export default function PlayerInput({
               <button
                 type="submit"
                 disabled={!inputValue.trim()}
-                className="flex-1 sm:flex-none h-11 sm:h-12 px-5 rounded-xl font-medium text-sm flex items-center justify-center gap-1.5 transition-all bg-[#D4AF37] text-black font-semibold hover:bg-[#E5C07B] disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer"
+                className="flex-1 sm:flex-none h-11 sm:h-12 px-5 rounded-xl font-medium text-sm flex items-center justify-center gap-1.5 transition-all bg-[#D4AF37] text-black hover:bg-[#E5C07B] disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer"
               >
                 <Plus size={16} />
                 <span>{isAr ? 'إضافة' : 'Add'}</span>
